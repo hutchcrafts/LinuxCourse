@@ -8,6 +8,6 @@ array1=( `cat File11.txt` )		#read from file
 
 sort_array1=($(echo "${array1[@]}" | tac | tr ' ' '\n' | sort -u | tr '\n' ' ')) #why tac doesnt work?
 
-
+                                                 #the order in the array does not reverse, it needs to be fixed
 
 echo -e "\nReversed unique array is ${sort_array1[@]}"
